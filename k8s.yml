@@ -6,8 +6,11 @@ metadata:
   namespace: default
   annotations:
     kubernetes.io/ingress.class: nginx
-    nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
-    nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "360s"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "360s"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "360s"
+    nginx.ingress.kubernetes.io/proxy-body-size: 100m
+    nginx.ingress.kubernetes.io/client-body-buffer-size: 100m
   #  #nginx.ingress.kubernetes.io/ssl-redirect: "false"
   #  #nginx.ingress.kubernetes.io/use-regex: "true"
   #  nginx.ingress.kubernetes.io/rewrite-target: /$1
