@@ -18,3 +18,5 @@ npm install -g wscat
 ```
 wscat -c ws://{域名或IP}:{port}
 ```
+- web 工具測試
+- [wstool](http://www.easyswoole.com/wstool.html)
