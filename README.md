@@ -21,3 +21,4 @@ wscat -c ws://{域名或IP}:{port}
 - web 工具測試
 - [wstool](http://www.easyswoole.com/wstool.html)
   - 服務位置格式：   `wss://nodejs-lab.seo19.net:443`
+- [js,console](https://jsbin.com/muqamiqimu/edit?js,console)  
