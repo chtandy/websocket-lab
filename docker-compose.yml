@@ -1,0 +1,18 @@
+version: '3'
+services:
+  nodejs:
+    container_name: nodejs
+    image: websocket
+    build:
+      context: ./
+    #entrypoint: ["bash", "-c", "ls -al"]
+    #command: ["bash"]
+    #tty: true
+    restart: always
+    ports:
+      - '3000:3000'
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
