@@ -13,13 +13,32 @@ const server = express()
 const wss = new SocketServer({ server })
 
 //當 WebSocket 從外部連結時執行
-wss.on('connection', ws => {
+//wss.on('connection', ws => {
+//
+//    //連結時執行此 console 提示
+//    console.log('Client connected')
+//
+//    //當 WebSocket 的連線關閉時執行
+//    ws.on('close', () => {
+//        console.log('Close connected')
+//    })
+//})
 
-    //連結時執行此 console 提示
+wss.on('connection', ws => {
     console.log('Client connected')
 
-    //當 WebSocket 的連線關閉時執行
+    //固定送最新時間給 Client
+    const sendNowTime = setInterval(()=>{
+        ws.send(String(new Date()))
+    },1000)
+
+    ws.on('message', data => {
+        ws.send(data)
+    })
+
     ws.on('close', () => {
+        //連線中斷時停止 setInterval
+        clearInterval(sendNowTime)
         console.log('Close connected')
     })
 })
