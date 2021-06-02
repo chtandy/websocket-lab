@@ -1,7 +1,10 @@
 ### 來源參考
 - [WebSocket 讓前後端沒有距離](https://medium.com/enjoy-life-enjoy-coding/javascript-websocket-%E8%AE%93%E5%89%8D%E5%BE%8C%E7%AB%AF%E6%B2%92%E6%9C%89%E8%B7%9D%E9%9B%A2-34536c333e1b)   
 - [JavaScript | WebSocket 讓前後端沒有距離](https://ms314006.github.io/js-websocket/)     
-- [kubernetes ingress-nginx websocket 长连接配置](https://linkscue.com/posts/2021-05-27-k8s-ingress-nginx-websocket/)       
+- [kubernetes ingress-nginx websocket 长连接配置](https://linkscue.com/posts/2021-05-27-k8s-ingress-nginx-websocket/)     
+- [nginx反向代理WebSocket](https://www.xncoding.com/2018/03/12/fullstack/nginx-websocket.html)       
+
+
 ### 這個lab 測試websocket 的呈現
 ### server 端
 - docker-compose up -d
