@@ -5,6 +5,7 @@
 ### server 端
 - docker-compose up -d
   - server 端服務就進入監聽模式 
+  - 監聽port為 3000
   
 ### client 安裝 wscat
 
